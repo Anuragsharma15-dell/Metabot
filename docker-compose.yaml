@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  metabot-backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENMETADATA_HOST=${OPENMETADATA_HOST:-http://openmetadata:8585}
+      - OPENMETADATA_TOKEN=${OPENMETADATA_TOKEN:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    restart: unless-stopped
+
+  metabot-frontend:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    depends_on:
+      - metabot-backend
+    restart: unless-stopped
