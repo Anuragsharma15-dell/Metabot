@@ -2,6 +2,9 @@
 
 > An intelligent AI-powered assistant that brings natural language interaction, PII detection, lineage exploration, and governance automation to OpenMetadata.
 
+![MetaBot Overview](./metabot.png)
+![MetaBot Application](./load.png)
+
 ## 🏆 Hackathon Track
 **Paradox #T-01: MCP Ecosystem & AI Agents**
 
