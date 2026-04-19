@@ -3,14 +3,16 @@
 > An intelligent AI-powered assistant that brings natural language interaction, PII detection, lineage exploration, and governance automation to OpenMetadata.
 
 ![MetaBot Overview](./metabot.png)
-![MetaBot Application](./load.png)
 
-## 🏆 Hackathon Track
+
+
 **Paradox #T-01: MCP Ecosystem & AI Agents**
 
 MetaBot transforms OpenMetadata from a passive catalog into an active, conversational intelligence layer. Data engineers and governance teams can interact with their entire data estate through natural language — discovering assets, detecting PII, exploring lineage, and monitoring data quality without writing a single query.
 
 ---
+Connect your claude api key to start:=
+![MetaBot Application](./load.png)
 
 ## ✨ Features
 
